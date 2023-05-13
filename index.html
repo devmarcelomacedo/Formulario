@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=vamos, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>DevGamer</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <img src="imagem/ti.avif" alt="foto do gamer">
+        <h1> DTI CATEDRAL CAMPOS </h1>
+        <p>
+            Clique em: ENTRAR EM CONTATO <br>
+            e nos informe o que está acontecendo. <br>
+            Problemas no Computador, <br>
+            Impressora, <br>
+            Problemas de Software .
+        </p>
+        <p>
+            envie a sua mensagem <br> e nos informe o seu setor 
+        </p>
+        <button onclick="abrir()" class="entrar-em-contato">Entrar em Contato</button>
+    </div>
+
+    <form action="https://formspree.io/f/xzbqwbll" method="POST">
+        <input type="text" name="name" required placeholder="Nome">
+        <input placeholder="E-mail" type="email" name="email" id="cemail">
+        <textarea placeholder="Sua mensagem"></textarea>
+        <button type="submit">ENVIAR</button>
+        <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+    </form>
+</body>
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.2
+    }
+
+    function fechar(){
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+
+</script>
+
+</html>
