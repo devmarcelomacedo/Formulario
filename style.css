@@ -16,6 +16,17 @@ h1 {
     color: #FFFFFF;
     text-align: center;
     margin-top: 35px;
+    margin-bottom: 35px;
+   
+}
+#cat {
+    border: 1px dashed red;
+    width: 600px;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 25%;
+    
+    
 }
 
 p {
